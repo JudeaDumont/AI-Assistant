@@ -12,7 +12,7 @@ public class SpeechToText {
 
     public static void main(String[] args) throws IOException, LineUnavailableException {
         LibVosk.setLogLevel(LogLevel.DEBUG);
-        Model model = new Model("models/vosk-model-en-us-0.22");
+        Model model = new Model("models/vosk-model-en-us-0.42-gigaspeech");
 
         Recognizer recognizer = new Recognizer(model, 16000.0f);
         AudioFormat format = new AudioFormat(16000.0f, 16, 1, true, false);
